@@ -24,7 +24,7 @@ Instalar Dependencias
 npm install
 ```
 
-Configurar Variables de Entorno
+Configurar Variables de Entorno:
 Crear un archivo .env en el directorio backend y configurar las variables necesarias, como la conexión a la base de datos (la variable llamada "MONGOURI"). 
 
 Iniciar el Servidor
