@@ -107,7 +107,10 @@
 /* Consulta de medios para pantallas más pequeñas */
 @media screen and (max-width: 1440px) {
   .container .card{
-    height: 70%;
+    height: 78%;
+  }
+  .container .card img{
+    height: 70px;
   }
   
 }
