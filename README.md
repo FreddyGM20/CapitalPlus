@@ -11,7 +11,7 @@ Pasos para ejecutar el backend:
 Clonar el Repositorio
 
 ```sh
-git clone https://github.com/tuusuario/Capitalplus.git
+git clone https://github.com/FreddyGM20/CapitalPlus.git
 ```
 
 Dirigirse a la carpeta del backend
