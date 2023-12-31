@@ -8,7 +8,7 @@ const NavbarU = () => {
   const handleLogout = () => {
     // Elimina todas las cookies estableciendo una fecha de caducidad pasada
     document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-
+    localStorage.removeItem('token');
     // Redirige a la página de inicio
     navigate("/");
   };
