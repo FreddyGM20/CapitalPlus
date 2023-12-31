@@ -4,7 +4,7 @@ Este es un breve README para ejecutar el proyecto "CapitalPlus". Este proyecto c
 # Backend
 Requisitos previos
 - Node.js instalado (versión recomendada: 14.x)
-- MongoDB instalado y en ejecución
+- Cuenta y una URI de MongoDB Atlas
   
 Pasos para ejecutar el backend:
 
@@ -23,6 +23,9 @@ Instalar Dependencias
 ```sh
 npm install
 ```
+
+Configurar Variables de Entorno
+Crear un archivo .env en el directorio backend y configurar las variables necesarias, como la conexión a la base de datos (la variable llamada "MONGOURI"). 
 
 Iniciar el Servidor
 ```sh
