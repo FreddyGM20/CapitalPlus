@@ -5,21 +5,29 @@ Este es un breve README para ejecutar el proyecto "CapitalPlus". Este proyecto c
 Requisitos previos
 - Node.js instalado (versión recomendada: 14.x)
 - MongoDB instalado y en ejecución
-- 
+  
 Pasos para ejecutar el backend:
 
 Clonar el Repositorio
 
-´git clone https://github.com/tuusuario/Capitalplus.git´
+```sh
+git clone https://github.com/tuusuario/Capitalplus.git
+```
 
 Dirigirse a la carpeta del backend
-´cd backend´
+```sh
+cd backend
+```
 
 Instalar Dependencias
-´npm install´
+```sh
+npm install
+```
 
 Iniciar el Servidor
-´npm run start´
+```sh
+npm run start
+```
 
 El servidor estará en funcionamiento en http://localhost:3000 por defecto.
 
@@ -30,13 +38,19 @@ Requisitos previos:
 Pasos para ejecutar el frontend:
 
 Navegar al Directorio del Frontend
-´cd frontend´
+```sh
+cd frontend
+```
 
 Instalar Dependencias
-´npm install´
+```sh
+npm install
+```
 
 Iniciar la Aplicación
-´npm run dev´
+```sh
+npm run dev
+```
 
 La aplicación estará disponible en http://localhost:5173 por defecto.
 
