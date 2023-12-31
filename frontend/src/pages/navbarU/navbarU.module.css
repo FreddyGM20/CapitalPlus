@@ -10,7 +10,7 @@ header {
   align-items: center;
   backdrop-filter: blur(5px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  z-index: 2;
+  z-index: 3;
 }
 header .logo {
   display: flex;
@@ -150,6 +150,7 @@ cursor: pointer;
 @media (max-width: 900px) {
   header {
     height: 10%;
+    background: white;
   }
   header img {
     height: 60px;

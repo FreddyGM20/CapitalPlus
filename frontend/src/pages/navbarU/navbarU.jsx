@@ -48,6 +48,7 @@ const NavbarU = () => {
         </button>
         <nav id="nav" className={style.navigationBtns}>
           <div className={style.btns}>
+          <a href="/dashboard">Inicio</a>
             <a href="/withdraw">Retirar</a>
             <a href="/transfer">Transferir</a>
             <a href="/depositar">Depositar</a>

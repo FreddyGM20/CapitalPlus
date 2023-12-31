@@ -30,7 +30,6 @@ const Navbar = () => {
         <button onClick={() => navigate("/login")} className={style.btnLogin}>
           Iniciar sesion
         </button>
-        <button>fdsfdsffer</button>
       </nav>
       <div className={style.navigationM}>
         <button id="menu" onClick={handleMenuClick}>

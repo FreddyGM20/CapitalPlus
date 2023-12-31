@@ -41,11 +41,11 @@ header img {
   margin-right: 50px;
   height: 100%;
 }
-.navigationM button{
-background-color: transparent;
-color: black;
-border: none;
-cursor: pointer;
+.navigationM button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
 }
 
 .navigationM .navigationBtns {
@@ -59,9 +59,8 @@ cursor: pointer;
   width: 100vw;
   z-index: -1;
   transition: all 0.4s ease;
-
 }
-.navigationM .navigationBtns .btns{
+.navigationM .navigationBtns .btns {
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -155,6 +154,7 @@ cursor: pointer;
 @media (max-width: 900px) {
   header {
     height: 10%;
+    background: #FFFFFF;
   }
   header img {
     height: 60px;
