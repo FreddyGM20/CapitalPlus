@@ -4,7 +4,7 @@ Este es un breve README para ejecutar el proyecto "CapitalPlus". Este proyecto c
 # Backend
 Requisitos previos
 - Node.js instalado (versión recomendada: 14.x)
-- Cuenta y una URI de MongoDB Atlas
+- Tener una URI de MongoDB Atlas
   
 Pasos para ejecutar el backend:
 
