@@ -57,6 +57,7 @@ npm run dev
 
 La aplicación estará disponible en http://localhost:5173 por defecto.
 
-Cuentas que se pueden usar en la app:
-- Usuario: fguete@gmail.com : password: 123456789
-- Usuario: sguete@gmail.com : password: 123456789
+Cuentas y variables de prueba que se pueden usar en la app:
+- MONGOURI: mongodb+srv://root:root123@cluster0.wosu09q.mongodb.net/Capitalplus?retryWrites=true&w=majority
+- Usuario: fguete@gmail.com : password: 123456789 : Numero de cuenta: 6590e1708157171822992d78
+- Usuario: sguete@gmail.com : password: 123456789 : Numero de cuenta: 65911afb0e63ccd2e8e46225
