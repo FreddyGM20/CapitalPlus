@@ -1,7 +1,7 @@
-Proyecto "CapitalPlus"
+#Proyecto "CapitalPlus"
 Este es un breve README para ejecutar el proyecto "CapitalPlus". Este proyecto consta de un frontend y un backend. A continuación, se proporcionan instrucciones paso a paso para ejecutar ambas partes.
 
-*Backend*
+#Backend
 Requisitos previos
 - Node.js instalado (versión recomendada: 14.x)
 - MongoDB instalado y en ejecución
@@ -23,7 +23,7 @@ Iniciar el Servidor
 
 El servidor estará en funcionamiento en http://localhost:3000 por defecto.
 
-*Frontend*
+#Frontend
 Requisitos previos:
 - Node.js instalado (versión recomendada: 14.x)
   
