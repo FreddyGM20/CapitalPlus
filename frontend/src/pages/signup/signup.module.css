@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../../assets/bgsp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+.container .circle:nth-child(1) {
+  content: "-";
+  background-color: #003af6;
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  top: -200px;
+  left: -200px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 46px 0px rgba(0, 0, 0, 0.45);
+}
+.container .circle:nth-child(2) {
+  content: "-";
+  background-color: #426cf8;
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  bottom: -200px;
+  right: -200px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 46px 0px rgba(0, 0, 0, 0.45);
+}
+.container .card {
+  background-color: white;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 60%;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 10px 10px 46px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  padding: 40px;
+  gap: 20px;
+}
+.container .card h1{
+  color: #426cf8;
+}
+.container .card .backButton {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 65px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .card img {
+  height: 100px;
+}
+.container .card form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.container .card form .combined {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.container .card form .combined input {
+  width: 65%;
+  background-color: white;
+  border: 1px solid gray;
+  color: black;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.container .card button {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background: #003af6;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: white;
+  font-weight: 500;
+}
+.container .card button:hover {
+  transition: linear 0.3s;
+  background-color: white;
+  border: 2px solid #003af6;
+  color: black;
+}
