@@ -130,22 +130,22 @@ exports.realizarTransferencia = async (req, res) => {
     });
     if (!usuarioDestinoEncontrado) {
       return res
-        .status(404)
-        .json({ mensaje: "Usuario de destino no encontrado" });
+        .status(201)
+        .json({ status:"error", error: "Usuario de destino no encontrado" });
     }
 
     // Verificar que el usuario de origen tenga suficiente saldo para la transferencia
     const usuarioOrigen = await Usuario.findById(usuarioOrigenId).select("-password");
     if (!usuarioOrigen) {
       return res
-        .status(404)
-        .json({ mensaje: "Usuario de origen no encontrado" });
+        .status(201)
+        .json({ status:"error", error: "Usuario de origen no encontrado" });
     }
 
     if (usuarioOrigen.saldo < monto) {
       return res
-        .status(400)
-        .json({ mensaje: "Saldo insuficiente para realizar la transferencia" });
+        .status(201)
+        .json({ status:"error",error: "Saldo insuficiente para realizar la transferencia" });
     }
 
     usuarioDestinoEncontrado.saldo += monto;

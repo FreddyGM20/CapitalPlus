@@ -64,7 +64,7 @@ const Depositar = () => {
             <input id="saldo" type="text" required />
           </div>
         </form>
-        <button onClick={ObtenerDeposito} type="submit">Retirar</button>
+        <button onClick={ObtenerDeposito} type="submit">Depositar</button>
       </div>
     </div>
   );

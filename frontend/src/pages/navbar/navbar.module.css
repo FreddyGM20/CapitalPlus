@@ -79,10 +79,12 @@ header {
     transform: scaleX(1);
   }
   
-  @media (max-width: 1400px) {
-    header{
-      height: 14%;
+  @media (max-width: 1440px) {
+    header {
+      height: 10%;
+    }
+    header img {
+      height: 60px;
     }
   }
-  
   

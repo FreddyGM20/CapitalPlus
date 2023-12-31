@@ -102,3 +102,10 @@
     color: black;
   }
   
+  /* Consulta de medios para pantallas más pequeñas */
+@media screen and (max-width: 1440px) {
+  .container .card{
+    height: 70%;
+  }
+  
+}

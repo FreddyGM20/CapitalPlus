@@ -106,3 +106,14 @@
     color: black;
   }
   
+  /* Consulta de medios para pantallas más pequeñas */
+  @media screen and (max-width: 1440px) {
+    .container .card{
+      margin-top: 120px;
+      height: 60%;
+    }
+    .container .card img{
+      height: 70px;
+    }
+
+  }

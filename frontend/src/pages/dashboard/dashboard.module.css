@@ -169,12 +169,20 @@
   }
 
   @media screen and (max-width: 1440px) {
-
+    .container .content .cardCombined .card{
+      height: 55px;
+    }
+    .container .content h1{
+      font-size: 28px;
+    }
+    .container .content{
+      margin-top: 100px;
+    }
     .container .content .cardT {
-      height: 70%;
+      height: 75%;
     }
     .modal{
-      height: 50%;
+      height: 65%;
       width: 35%;
     }
     
