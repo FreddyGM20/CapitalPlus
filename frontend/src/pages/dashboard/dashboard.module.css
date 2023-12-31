@@ -1,189 +1,207 @@
 .container {
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-    background-image: url(../../assets//bgsp.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-  
-  .container .content {
-    display: flex;
-    flex-direction: column;
-    margin-top: 150px;
-    color: black;
-    padding: 30px;
-    width: 100%;
-    height: 100%;
-    gap: 30px;
-  }
-  
-  .container .content .cardCombined {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../../assets//bgsp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.container .content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  color: black;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  gap: 30px;
+}
+
+.container .content .cardCombined {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.container .content .cardCombined .card {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  gap: 200px;
+  border-radius: 20px;
+  border: 1px solid grey;
+}
+
+.container .content .contentT {
+  display: flex;
+  flex-direction: column;
+  height: 56%;
+  gap: 10px;
+}
+
+.container .content .cardT {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-x: auto;
+  border-radius: 20px;
+  border: 1px solid grey;
+}
+
+.container .content .cardT table {
+  width: 100%; /* Asegura que la tabla ocupe todo el ancho del contenedor */
+  border-collapse: collapse;
+}
+
+.container .content .cardT thead {
+  background-color: #f2f2f2;
+  position: sticky; /* Cambiado de 'fixed' a 'sticky' */
+  top: 0;
+  width: 100%;
+  z-index: 1; /* Asegura que las cabeceras estén encima del contenido */
+}
+
+.container .content .cardT th,
+td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+.container .content .cardT table .details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Agregado para permitir el ajuste en pantallas pequeñas */
+}
+.container .content .cardT table .details button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #003af6;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: white;
+  font-weight: 500;
+}
+.container .content .cardT table .details button:hover {
+  transition: linear 0.3s;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+
+.container .content .cardT tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: absolute;
+  color: black;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 45%;
+  width: 30%;
+  justify-content: start;
+  align-items: center;
+  padding: 20px 0;
+  border-radius: 20px;
+}
+.modal img {
+  height: 100px;
+}
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.modal form .combined {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+}
+.modal form input {
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 6px;
+  color: black;
+  padding: 5px;
+}
+.modal button {
+  width: 140px;
+  height: 50px;
+  text-align: center;
+  background: #003af6;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: white;
+  font-weight: 500;
+}
+.modal button:hover {
+  transition: linear 0.3s;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+
+@media screen and (max-width: 1440px) {
   .container .content .cardCombined .card {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 30px;
-    align-items: center;
-    height: 100px;
-    width: 100%;
-    gap: 200px;
-    border-radius: 20px;
-    border: 1px solid grey;
+    height: 55px;
   }
-  
-  .container .content .contentT {
-    display: flex;
-    flex-direction: column;
-    height: 56%;
-    gap: 10px;
+  .container .content h1 {
+    font-size: 28px;
   }
-  
+  .container .content {
+    margin-top: 100px;
+  }
   .container .content .cardT {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    overflow-x: auto;
-    border-radius: 20px;
-    border: 1px solid grey;
-    
+    height: 75%;
   }
-  
-  .container .content .cardT table {
-    width: 100%; /* Asegura que la tabla ocupe todo el ancho del contenedor */
-    border-collapse: collapse;
-  }
-  
-  .container .content .cardT thead {
-    background-color: #f2f2f2;
-    position: sticky; /* Cambiado de 'fixed' a 'sticky' */
-    top: 0;
-    width: 100%;
-    z-index: 1; /* Asegura que las cabeceras estén encima del contenido */
-  }
-  
-  .container .content .cardT th,
-  td {
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 8px;
-  }
-  .container .content .cardT table .details{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap; /* Agregado para permitir el ajuste en pantallas pequeñas */
-  }
-  .container .content .cardT table .details button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: #003af6;
-    border: 2px solid white;
-    outline: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 1.1em;
-    color: white;
-    font-weight: 500;
-  }
-  .container .content .cardT table .details button:hover{
-    transition: linear 0.3s;
-    background-color: white;
-    border: 2px solid black;
-    color: black;
-  }
-  
-  .container .content .cardT tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
- .modal{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    position: absolute;
-    color: black;
-    background-color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 45%;
-    width: 30%;
-    justify-content: start;
-    align-items: center;
-    padding: 20px 0;
-    border-radius: 20px;
-  }
-  .modal img{
-    height: 100px;
-  }
-  .modal form{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .modal form .combined{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    gap: 40px;
-  }
-  .modal form input{
-    background-color: white;
-    border: 1px solid grey;
-    border-radius: 6px;
-    color: black;
-    padding: 5px;
-  }
-  .modal button {
-    width: 140px;
-    height: 50px;
-    text-align: center;
-    background: #003af6;
-    border: 2px solid white;
-    outline: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 1.1em;
-    color: white;
-    font-weight: 500;
-  }
-  .modal button:hover {
-    transition: linear 0.3s;
-    background-color: white;
-    border: 2px solid black;
-    color: black;
+  .modal {
+    height: 65%;
+    width: 35%;
   }
 
-  @media screen and (max-width: 1440px) {
-    .container .content .cardCombined .card{
-      height: 55px;
+  @media screen and (max-width: 900px) {
+    .container .content{
+      margin-top: 120px;
     }
     .container .content h1{
-      font-size: 28px;
+      font-size: 22px;
     }
-    .container .content{
-      margin-top: 100px;
+    .container .content .cardCombined {
+      flex-direction: column;
     }
-    .container .content .cardT {
-      height: 75%;
+    .container .content .cardCombined .card{
+      width: 70%;
+      gap: 20px;
     }
-    .modal{
-      height: 65%;
-      width: 35%;
+    .container .content .cardT{
+      width: 85%;
+      height: 100%;
     }
-    
   }
+}

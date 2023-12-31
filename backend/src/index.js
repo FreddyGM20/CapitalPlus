@@ -7,11 +7,12 @@ const cookieParser = require('cookie-parser');
 const usuarioRoutes = require('./routes/userRoutes.js');
 const transaccionRoutes = require('./routes/transactionRoutes.js');
 const cors = require('cors');
+require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const mongoURI = 'mongodb+srv://root:root123@cluster0.wosu09q.mongodb.net/Capitalplus?retryWrites=true&w=majority';
+const mongoURI = process.env.MONGOURI;
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 
@@ -25,7 +26,7 @@ app.use(express.json());
 app.use(cookieParser());
 // Habilitar CORS para todas las rutas
 app.use(cors({
-    origin: ['http://localhost:5173', '*'], // Reemplaza con el origen de tu aplicación de React
+    origin: ['http://localhost:5173', '*'],
     credentials: true,
   }));
 

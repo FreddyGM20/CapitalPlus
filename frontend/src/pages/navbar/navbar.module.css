@@ -1,90 +1,169 @@
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 20px;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    z-index: 2;
-  }
-  header .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  header .logo h2 {
-    color: black;
-    font-size: 2em;
-    user-select: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 20px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .logo h2 {
+  color: black;
+  font-size: 2em;
+  user-select: none;
+}
+header img {
+  height: 80px;
+  border-radius: 20px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+.navigationM {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin-right: 50px;
+  height: 100%;
+}
+.navigationM button{
+background-color: transparent;
+color: black;
+border: none;
+cursor: pointer;
+}
+
+.navigationM .navigationBtns {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  transition: all 0.4s ease;
+
+}
+.navigationM .navigationBtns .btns{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-top: 140px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.navigationM .navigationBtns button {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background: #003af6;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: white;
+  font-weight: 500;
+}
+
+.navigationM a {
+  display: block;
+  font-size: 1.2em;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.openMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 40px;
+}
+.navigation .btnLogin {
+  width: 140px;
+  height: 50px;
+  text-align: center;
+  background: #003af6;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: white;
+  font-weight: 500;
+}
+.navigation .btnLogin:hover {
+  transition: linear 0.3s;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+
+.navigation a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #003af6;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.navigation a:hover::after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 1440px) {
+  header {
+    height: 10%;
   }
   header img {
-    height: 80px;
-    border-radius: 20px;
+    height: 60px;
   }
-  
-  .navigation{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 50px;
+}
+@media (max-width: 900px) {
+  header {
+    height: 10%;
   }
-  
-  .navigation a {
-    position: relative;
-    font-size: 1.1em;
-    color: black;
-    text-decoration: none;
-    font-weight: 500;
-    margin-right: 40px;
+  header img {
+    height: 60px;
   }
-  .navigation .btnLogin {
-    width: 140px;
-    height: 50px;
-    text-align: center;
-    background: #003af6;
-    border: 2px solid white;
-    outline: none;
-    border-radius: 10px;
+  .navigation {
+    display: none;
+  }
+  .navigationM {
+    display: flex;
     cursor: pointer;
-    font-size: 1.1em;
-    color: white;
-    font-weight: 500;
   }
-  .navigation .btnLogin:hover {
-    transition: linear 0.3s;
-    background-color: white;
-    border: 2px solid black;
-    color: black;
-  }
-  
-  .navigation a::after {
-    content: "";
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: #003af6;
-    border-radius: 5px;
-    transform: scaleX(0);
-    transition: transform 0.3s;
-  }
-  
-  .navigation a:hover::after {
-    transform: scaleX(1);
-  }
-  
-  @media (max-width: 1440px) {
-    header {
-      height: 10%;
-    }
-    header img {
-      height: 60px;
-    }
-  }
-  
+}

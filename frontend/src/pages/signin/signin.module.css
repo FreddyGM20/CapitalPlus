@@ -109,3 +109,16 @@
   }
   
 }
+@media screen and (max-width: 900px) {
+  .container .card{
+    height: 70%;
+    width: 60%;
+  }
+  .container .card .backButton{
+    top: 10px;
+    left: 10px;
+    width: 40px;
+  }
+  
+  
+}

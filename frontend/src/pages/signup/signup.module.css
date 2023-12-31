@@ -47,7 +47,7 @@
   padding: 40px;
   gap: 20px;
 }
-.container .card h1{
+.container .card h1 {
   color: #426cf8;
 }
 .container .card .backButton {
@@ -106,11 +106,33 @@
 }
 /* Consulta de medios para pantallas más pequeñas */
 @media screen and (max-width: 1440px) {
-  .container .card{
+  .container .card {
     height: 78%;
   }
-  .container .card img{
+  .container .card img {
     height: 70px;
   }
-  
+}
+@media screen and (max-width: 900px) {
+  .container .card {
+    height: 86%;
+    width: 60%;
+  }
+  .container .card .backButton {
+    top: 10px;
+    left: 10px;
+    width: 40px;
+  }
+  .container .card form {
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+  }
+  .container .card form .combined input {
+    width: 95%;
+  }
+  .container .card form .combined {
+    flex-direction: column;
+    width: 100%;
+  }
 }

@@ -117,4 +117,15 @@
   }
   
 }
+@media screen and (max-width: 900px) {
+  .container .card{
+    margin-top: 120px;
+    height: 60%;
+    width: 60%;
+  }
+  .container .card img{
+    height: 70px;
+  }
+  
+}
   
