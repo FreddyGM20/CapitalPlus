@@ -12,7 +12,6 @@ const Navbar = () => {
         <h2>CapitalPlus</h2>
       </div>
       <nav className={style.navigation}>
-        <a href="/abaoutus">Acerca de</a>
         <button onClick={() => navigate("/login")} className={style.btnLogin}>
           Iniciar sesion
         </button>
